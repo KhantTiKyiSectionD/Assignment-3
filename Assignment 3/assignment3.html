@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basketball Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="auth-section">
+        <h1>Login to Start Quiz</h1>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="button" id="login-btn">Login</button>
+        </form>
+    </section>
+
+    <section id="quiz-section" style="display: none;">
+        <h1>Basketball Knowledge Quiz</h1>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Who is known for the best 3 pointer?</p>
+                <label><input type="radio" name="q1" value="correct"> Stephen Curry</label>
+                <label><input type="radio" name="q1" value="wrong"> Michael Jordan</label>
+                <label><input type="radio" name="q1" value="wrong"> LeBron James</label>
+            </div>
+            <div class="question">
+                <p>2. How many players from each team are allowed on the court during a basketball game?</p>
+                <label><input type="radio" name="q2" value="correct"> 5</label>
+                <label><input type="radio" name="q2" value="wrong"> 6</label>
+                <label><input type="radio" name="q2" value="wrong"> 4</label>
+            </div>
+            <div class="question">
+                <p>3. Who holds the record for the most points scored in a single NBA game?</p>
+                <label><input type="radio" name="q3" value="correct"> Wilt Chamberlain</label>
+                <label><input type="radio" name="q3" value="wrong"> Kobe Bryant</label>
+                <label><input type="radio" name="q3" value="wrong"> LeBron James</label>
+            </div>
+            <div class="question">
+                <p>4. Which team has won the most NBA championships?</p>
+                <label><input type="radio" name="q4" value="correct"> Boston Celtics</label>
+                <label><input type="radio" name="q4" value="wrong"> Chicago Bulls</label>
+                <label><input type="radio" name="q4" value="wrong"> Golden State Warriors</label>
+            </div>
+            <div class="question">
+                <p>5. Who is often considered the best dunker in NBA history?</p>
+                <label><input type="radio" name="q5" value="correct"> Vince Carter</label>
+                <label><input type="radio" name="q5" value="wrong"> Michael Jordan</label>
+                <label><input type="radio" name="q5" value="wrong"> Shaquille O'Neal</label>
+            </div>
+            <button type="button" id="submit-quiz">Submit</button>
+        </form>
+    </section>
+
+    <section id="score-section" style="display: none;">
+        <h1>Your Final Score Is: <span id="score"></span></h1>
+    </section>
+    <script src="A3.js"></script>
+</body>
+</html>
